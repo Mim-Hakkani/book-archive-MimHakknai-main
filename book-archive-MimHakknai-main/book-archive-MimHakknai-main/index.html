@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Books Libreary</title>
+  </head>
+  <body>
+   
+<!-- searching books -->
+  <header>
+    <div class="container mt-5">
+        <div class="row g-0 ">
+            <div class="col-md-2"></div>
+            <div class="col-md-7 input-search">
+                <input type="text" placeholder="Search book by name ,," class="form-control" id="input-id">
+            </div>
+            <div class="col-md-3 input-search"> 
+                <button class="btn btn-info text-white" id="search-id" onclick="bookinput()">Search Book</button>
+            </div>
+        </div>
+    </div>
+  </header>
+
+
+    <!-- Error Handling for empty string -->
+    <div class="container-fluid">
+      <div id="error" class="text-danger text-center h2 text-capitalize my-3" style="display: none;">
+        <h3>No Results Found ,, input valid book name</h3>
+      </div>
+    </div>
+
+  <!-- Error Handling for invalid book name -->
+  <div class="container-fluid">
+    <div id="error2" class="text-danger text-center h2 text-capitalize my-3" style="display: none;">
+      <h4>Please input valid book name ,,,</h4>
+    </div>
+  </div>
+
+    <!-- see the number of results -->
+
+    <div class="container-fluid mt-4">
+        <div class="books-number" id="res-number" >
+           
+        </div>
+    </div>
+
+
+    
+    <!-- More information -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12"  id="more" >
+        
+              </div>
+        </div>
+    </div>
+
+
+
+  <!-- book details using card   -->
+
+    <div class="container-fluid mt-5">
+        <div class="row" id= "books-list">  
+       
+        </div>
+    </div>
+
+  
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+ <!-- main-js-file  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Online Books Store
+	Template URI: http://www.hakkani-it.com
+	Description: Book is better then friend
+	Author: Golam Hakkani mim
+	Author URI: http://www.hakkani-it.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+		2.1 search area
+
+	3. Error Handling
+	4. number of results of books
+	5. More Information
+	6. book details using card 
+
+
+-----------------------------------------------------------------------------------*/
+
+/************** 1. Typography ************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    font-size: 16px;
+    background-color: rgb(255, 254, 235);
+    font-family: 'Poppins', sans-serif;
+}
+
+/**************** 2. Header Area ********/
+header{
+    background-image: url(images/lib2.jpg);
+    height:700px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -46px;
+}
+
+.input-search{
+    margin-top: 300px;
+}
+
+/*  searcing result number  */
+#res-number{
+    
+  
+    letter-spacing: 2px;
+    margin-top: 15px;
+    overflow: hidden;
+    
+}
